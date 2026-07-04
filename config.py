@@ -4,6 +4,10 @@ All application settings in one place. Edit this file to configure your monitori
 """
 
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # ---------------------------------------------------------------------------
 # Movie & Location
@@ -57,6 +61,16 @@ TELEGRAM_CHAT_ID: str = os.getenv("TELEGRAM_CHAT_ID", "")
 # Storage
 # ---------------------------------------------------------------------------
 SNAPSHOT_FILE: str = os.getenv("SNAPSHOT_FILE", "snapshot.json")
+
+# ---------------------------------------------------------------------------
+# Direct Showtime URL
+# ---------------------------------------------------------------------------
+BUY_TICKETS_URL: str = os.getenv("BUY_TICKETS_URL", "")
+if not BUY_TICKETS_URL:
+    # Construct default
+    city_lower = CITY.lower()
+    city_short = "hyd" if "hyd" in city_lower else city_lower[:3]
+    BUY_TICKETS_URL = f"https://in.bookmyshow.com/buytickets/{BMS_MOVIE_SLUG}-{city_lower}/movie-{city_short}-{BMS_EVENT_CODE}-MT"
 
 # ---------------------------------------------------------------------------
 # Retries

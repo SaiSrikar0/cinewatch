@@ -28,6 +28,25 @@ class ChangeEvent:
     detail: str = ""         # human-readable detail
 
 
+def is_preferred_show(show: dict[str, Any]) -> bool:
+    """Check if a show matches the configured preferred theatres and formats."""
+    import config
+    theatre = show.get("theatre", "")
+    fmt = show.get("format", "")
+    
+    # Match theatre
+    theatre_match = True
+    if config.PREFERRED_THEATRES:
+        theatre_match = any(kw.lower() in theatre.lower() for kw in config.PREFERRED_THEATRES)
+        
+    # Match format
+    format_match = True
+    if config.PREFERRED_FORMATS:
+        format_match = any(kw.lower() in fmt.lower() for kw in config.PREFERRED_FORMATS)
+        
+    return theatre_match and format_match
+
+
 def compare_snapshots(
     previous: dict[str, Any],
     current: dict[str, Any],
@@ -36,45 +55,65 @@ def compare_snapshots(
     Compare two snapshots and return a list of ChangeEvents.
     Returns [ChangeEvent("NO_CHANGE")] if nothing meaningful changed.
     """
+    import config
     events: list[ChangeEvent] = []
 
     # 0. Movie appeared for the first time on BMS
     if not previous.get("movie_found") and current.get("movie_found"):
-        events.append(ChangeEvent("MOVIE_APPEARING", "Spider-Man just appeared on BookMyShow!"))
-        logger.info("Event: MOVIE_APPEARING")
+        if not config.PREFERRED_THEATRES and not config.PREFERRED_FORMATS:
+            events.append(ChangeEvent("MOVIE_APPEARING", "Spider-Man just appeared on BookMyShow!"))
+            logger.info("Event: MOVIE_APPEARING")
 
     # 0b. Movie moved from upcoming to now-showing section
     prev_section = previous.get("movie_section", "")
     curr_section = current.get("movie_section", "")
     if prev_section == "upcoming" and curr_section == "now_showing":
-        events.append(ChangeEvent("MOVIE_NOW_SHOWING", "Movie moved to Now Showing section!"))
-        logger.info("Event: MOVIE_NOW_SHOWING")
+        if not config.PREFERRED_THEATRES and not config.PREFERRED_FORMATS:
+            events.append(ChangeEvent("MOVIE_NOW_SHOWING", "Movie moved to Now Showing section!"))
+            logger.info("Event: MOVIE_NOW_SHOWING")
 
     # 1. Booking status
     if not previous.get("booking_open") and current.get("booking_open"):
-        events.append(ChangeEvent("BOOKING_OPEN", "Bookings just opened!"))
-        logger.info("Event: BOOKING_OPEN")
+        # If preferred configurations exist, only notify if we have at least one preferred show
+        if not config.PREFERRED_THEATRES and not config.PREFERRED_FORMATS:
+            events.append(ChangeEvent("BOOKING_OPEN", "Bookings just opened!"))
+            logger.info("Event: BOOKING_OPEN")
+        else:
+            has_pref_shows = any(is_preferred_show(s) for s in current.get("shows", []))
+            if has_pref_shows:
+                events.append(ChangeEvent("BOOKING_OPEN", "Bookings just opened for preferred theatres/formats!"))
+                logger.info("Event: BOOKING_OPEN (preferred)")
 
-    # 2. New theatres
+    # 2. New theatres (only preferred if list is set)
     prev_theatres = set(previous.get("theatres", []))
     curr_theatres = set(current.get("theatres", []))
     for theatre in sorted(curr_theatres - prev_theatres):
-        events.append(ChangeEvent("NEW_THEATRE", theatre))
-        logger.info("Event: NEW_THEATRE — %s", theatre)
+        if not config.PREFERRED_THEATRES or any(kw.lower() in theatre.lower() for kw in config.PREFERRED_THEATRES):
+            events.append(ChangeEvent("NEW_THEATRE", theatre))
+            logger.info("Event: NEW_THEATRE — %s", theatre)
 
-    # 3. New formats
+    # 3. New formats (only preferred if list is set)
     prev_formats = set(previous.get("formats", []))
     curr_formats = set(current.get("formats", []))
     for fmt in sorted(curr_formats - prev_formats):
-        events.append(ChangeEvent("NEW_FORMAT", fmt))
-        logger.info("Event: NEW_FORMAT — %s", fmt)
+        if not config.PREFERRED_FORMATS or any(kw.lower() in fmt.lower() for kw in config.PREFERRED_FORMATS):
+            events.append(ChangeEvent("NEW_FORMAT", fmt))
+            logger.info("Event: NEW_FORMAT — %s", fmt)
 
-    # 4. New shows
+    # 4. New shows (only preferred if list is set)
     prev_shows = _show_set(previous.get("shows", []))
     curr_shows = _show_set(current.get("shows", []))
-    for show_key in sorted(curr_shows - prev_shows):
-        events.append(ChangeEvent("NEW_SHOW", show_key))
-        logger.info("Event: NEW_SHOW — %s", show_key)
+    new_shows = curr_shows - prev_shows
+    for show_key in sorted(new_shows):
+        parts = show_key.split("|")
+        show_dict = {
+            "theatre": parts[0] if len(parts) > 0 else "",
+            "time": parts[1] if len(parts) > 1 else "",
+            "format": parts[2] if len(parts) > 2 else ""
+        }
+        if is_preferred_show(show_dict):
+            events.append(ChangeEvent("NEW_SHOW", show_key))
+            logger.info("Event: NEW_SHOW — %s", show_key)
 
     # 5. Preferred theatres newly appeared
     prev_pref_t = set(previous.get("preferred_theatres_found", []))

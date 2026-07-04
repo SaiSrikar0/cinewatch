@@ -19,9 +19,10 @@ logger = get_logger()
 
 TELEGRAM_API = "https://api.telegram.org/bot{token}/sendMessage"
 
-# Tracks already-notified event keys (theatre+format+time combos)
-# Persisted to disk so restarts don't cause duplicate notifications.
-NOTIFIED_FILE = "notified.json"
+# Tracks already-notified messages to prevent duplicate alerts
+# Persisted in same directory as snapshot to survive restarts/rebuilds
+_snapshot_dir = os.path.dirname(config.SNAPSHOT_FILE) if config.SNAPSHOT_FILE else ""
+NOTIFIED_FILE = os.path.join(_snapshot_dir, "notified.json") if _snapshot_dir else "notified.json"
 
 
 def _load_notified() -> set[str]:
@@ -57,19 +58,19 @@ def notify(events: list[ChangeEvent], snapshot: dict[str, Any]) -> None:
         if event.event_type == "NO_CHANGE":
             continue
 
-        # Build a unique key to deduplicate
-        key = f"{event.event_type}::{event.detail}"
-        if key in notified:
-            logger.info("Duplicate notification skipped: %s", key)
+        message = _build_message(event, snapshot)
+        
+        # Deduplicate based on the exact message text (prevents duplicate notification sends)
+        if message in notified:
+            logger.info("Duplicate notification skipped (message match): %s", event.detail)
             continue
 
-        message = _build_message(event, snapshot)
         success = _send_telegram(message)
 
         if success:
-            notified.add(key)
+            notified.add(message)
             sent_any = True
-            logger.info("Notification sent: %s", key)
+            logger.info("Notification sent: %s", event.detail)
 
     if sent_any:
         _save_notified(notified)
@@ -84,6 +85,12 @@ def _build_message(event: ChangeEvent, snapshot: dict[str, Any]) -> str:
 
     if event.event_type == "BOOKING_OPEN":
         lines.append("🚨 *BOOKINGS ARE NOW OPEN!*")
+        pref_t = snapshot.get("preferred_theatres_found", [])
+        pref_f = snapshot.get("preferred_formats_found", [])
+        if pref_t:
+            lines.append(f"🏟 Preferred theatres open: *{', '.join(pref_t)}*")
+        if pref_f:
+            lines.append(f"🖥 Preferred formats open: *{', '.join(pref_f)}*")
 
     elif event.event_type == "MOVIE_APPEARING":
         lines.append("\u2728 Movie just appeared on BookMyShow!")
@@ -94,10 +101,10 @@ def _build_message(event: ChangeEvent, snapshot: dict[str, Any]) -> str:
         lines.append("🚨 Bookings may open very soon.")
 
     elif event.event_type == "PREFERRED_THEATRE":
-        lines.append(f"📍 Preferred theatre detected: *{event.detail}*")
+        lines.append(f"🏟 Preferred theatre detected: *{event.detail}*")
 
     elif event.event_type == "PREFERRED_FORMAT":
-        lines.append(f"🎥 Preferred format detected: *{event.detail}*")
+        lines.append(f"🖥 Preferred format detected: *{event.detail}*")
 
     elif event.event_type == "NEW_THEATRE":
         lines.append(f"🏟 New theatre: *{event.detail}*")
@@ -110,12 +117,13 @@ def _build_message(event: ChangeEvent, snapshot: dict[str, Any]) -> str:
         theatre = parts[0] if len(parts) > 0 else ""
         time_str = parts[1] if len(parts) > 1 else ""
         fmt = parts[2] if len(parts) > 2 else ""
+        lines.append("🚨 *New Preferred Showtimes Opened!*")
         if theatre:
-            lines.append(f"📍 {theatre}")
+            lines.append(f"📍 Theatre: *{theatre}*")
         if fmt:
-            lines.append(f"🎥 {fmt}")
+            lines.append(f"🎥 Format: *{fmt}*")
         if time_str:
-            lines.append(f"🕘 {time_str}")
+            lines.append(f"🕘 Time: *{time_str}*")
 
     lines.append(f"\n👉 [Open BookMyShow]({url})")
     return "\n".join(lines)

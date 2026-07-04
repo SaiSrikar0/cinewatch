@@ -21,6 +21,7 @@ Confirmed working strategy (as of 2026-07-04):
   That's OK — the explore page section is the primary booking signal.
 """
 
+import json
 import re
 import time
 from typing import Any
@@ -135,9 +136,92 @@ def _run_scrape(
     """Core scrape flow."""
 
     # ----------------------------------------------------------------
-    # Step 1: Load the explore page (confirmed Cloudflare-safe)
+    # Step 1: Try direct tickets page scraping (extremely reliable)
     # ----------------------------------------------------------------
-    logger.info("Loading explore page: %s", EXPLORE_URL)
+    tickets_url = config.BUY_TICKETS_URL
+    logger.info("Attempting direct tickets page load: %s", tickets_url)
+    try:
+        page.goto(tickets_url, wait_until="domcontentloaded", timeout=45000)
+        time.sleep(5)
+        
+        page_title = page.title()
+        html_content = page.content()
+        
+        if "cloudflare" not in page_title.lower() and "attention required" not in page_title.lower():
+            # Check for INITIAL_STATE
+            match = re.search(r"window\.__INITIAL_STATE__\s*=\s*(\{.*\});?", html_content)
+            if match:
+                state_data = json.loads(match.group(1))
+                showtimes_root = state_data.get("showtimesByEvent", {})
+                show_dates_dict = showtimes_root.get("showDates", {})
+                
+                if show_dates_dict:
+                    theatres_set = set()
+                    formats_set = set()
+                    shows_list = []
+                    
+                    for date_code, day_data in show_dates_dict.items():
+                        venues_dict = day_data.get("primaryStatic", {}).get("data", {}).get("venues", {})
+                        showtime_widgets = day_data.get("dynamic", {}).get("data", {}).get("showtimeWidgets", [])
+                        
+                        # Find groupList widget
+                        group_list_widget = None
+                        for widget in showtime_widgets:
+                            if widget.get("type") == "groupList":
+                                group_list_widget = widget
+                                break
+                        
+                        if not group_list_widget:
+                            continue
+                            
+                        venues_list = group_list_widget.get("data", [])[0].get("data", [])
+                        
+                        for item in venues_list:
+                            venue_code = item.get("id")
+                            if not venue_code:
+                                continue
+                            
+                            venue_static = venues_dict.get(venue_code, {})
+                            venue_name = venue_static.get("venueName", "Unknown Venue").strip()
+                            theatres_set.add(venue_name)
+                            
+                            showtimes = item.get("showtimes", [])
+                            for show in showtimes:
+                                show_time = show.get("showTime") or show.get("title") or ""
+                                show_time = show_time.strip()
+                                
+                                add_data = show.get("additionalData", {})
+                                screen_attr = show.get("screenAttr") or add_data.get("attributes") or ""
+                                screen_attr = screen_attr.strip()
+                                if screen_attr:
+                                    formats_set.add(screen_attr)
+                                    
+                                shows_list.append({
+                                    "theatre": venue_name,
+                                    "time": show_time,
+                                    "format": screen_attr,
+                                    "date": date_code
+                                })
+                    
+                    if shows_list:
+                        logger.info("Direct tickets page scraped successfully | theatres=%d | shows=%d", len(theatres_set), len(shows_list))
+                        return {
+                            "booking_open": True,
+                            "movie_found": True,
+                            "movie_section": "now_showing",
+                            "theatres": list(theatres_set),
+                            "formats": list(formats_set),
+                            "shows": shows_list,
+                            "raw_url": page.url,
+                        }
+        logger.warning("Direct tickets page did not return showtimes (may not be open or redirected).")
+    except Exception as exc:
+        logger.warning("Direct tickets page loading failed: %s", exc)
+
+    # ----------------------------------------------------------------
+    # Step 2: Fallback to Explore page
+    # ----------------------------------------------------------------
+    logger.info("Falling back to explore page: %s", EXPLORE_URL)
     page.goto(EXPLORE_URL, wait_until="domcontentloaded")
     time.sleep(5)
 
@@ -150,9 +234,6 @@ def _run_scrape(
         page.reload(wait_until="domcontentloaded")
         time.sleep(5)
 
-    # ----------------------------------------------------------------
-    # Step 2: Find movie and determine section using confirmed DOM structure
-    # ----------------------------------------------------------------
     movie_href, movie_section, card_formats = _find_movie_and_section(page)
 
     if not movie_href:
@@ -175,27 +256,14 @@ def _run_scrape(
     # Determine booking status from section
     booking_open = movie_section == "now_showing"
 
-    # ----------------------------------------------------------------
-    # Step 3: Try to get more detail from movie page (best effort)
-    #         On a fresh VM IP this will fully work.
-    #         On a rate-limited IP it may fail — that's OK.
-    # ----------------------------------------------------------------
-    theatres, more_formats, shows = _try_movie_page(page, movie_href)
-
     # Merge formats
-    all_formats = list(dict.fromkeys(card_formats + more_formats))  # dedup, preserve order
-
-    # If movie page confirmed booking open, trust it
-    if theatres or more_formats:
-        booking_open = True
-
     return {
         "booking_open": booking_open,
         "movie_found": True,
         "movie_section": movie_section,
-        "theatres": theatres,
-        "formats": all_formats,
-        "shows": shows,
+        "theatres": [],
+        "formats": card_formats,
+        "shows": [],
         "raw_url": page.url,
     }
 

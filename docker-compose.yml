@@ -7,23 +7,13 @@ services:
     restart: unless-stopped          # auto-restart on crash; stop only on explicit docker stop
 
     environment:
-      # ── Movie ──────────────────────────────────────────────────────────────
-      - MOVIE_NAME=Spider-Man: Brand New Day
-      - CITY=Hyderabad
-
-      # ── Polling ────────────────────────────────────────────────────────────
-      - CHECK_INTERVAL_SECONDS=300   # 5 minutes
-
-      # ── Playwright ─────────────────────────────────────────────────────────
-      - HEADLESS=true
-
-      # ── Telegram ───────────────────────────────────────────────────────────
-      # REPLACE these values with your real token and chat ID
-      - TELEGRAM_BOT_TOKEN=YOUR_BOT_TOKEN_HERE
-      - TELEGRAM_CHAT_ID=YOUR_CHAT_ID_HERE
-
-      # ── Storage ────────────────────────────────────────────────────────────
-      - SNAPSHOT_FILE=/app/data/snapshot.json
+      MOVIE_NAME: "${MOVIE_NAME:-Spider-Man: Brand New Day}"
+      CITY: "${CITY:-Hyderabad}"
+      CHECK_INTERVAL_SECONDS: "${CHECK_INTERVAL_SECONDS:-300}"
+      HEADLESS: "${HEADLESS:-true}"
+      TELEGRAM_BOT_TOKEN: "${TELEGRAM_BOT_TOKEN}"
+      TELEGRAM_CHAT_ID: "${TELEGRAM_CHAT_ID}"
+      SNAPSHOT_FILE: "${SNAPSHOT_FILE:-/app/data/snapshot.json}"
 
     volumes:
       - cinewatch_data:/app/data     # persistent snapshot + logs
