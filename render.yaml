@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: cinewatch-scraper
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: MOVIE_NAME
+        value: "Spider-Man: Brand New Day"
+      - key: CITY
+        value: "Hyderabad"
+      - key: CHECK_INTERVAL_SECONDS
+        value: "600"
+      - key: HEADLESS
+        value: "true"
+      - key: STEALTH
+        value: "true"
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: SNAPSHOT_FILE
+        value: "/app/data/snapshot.json"
