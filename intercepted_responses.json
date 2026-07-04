@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://in.bookmyshow.com/api/seo/v1/footer?url=%2Fexplore%2Fhome",
+    "status": 200,
+    "body_preview": "{\"header\":{\"canonical\":\"/explore/home\",\"meta_description\":\"BookMyShow offers showtimes, movie tickets, reviews, trailers, concert tickets and events near Mumbai . Also features promotional offers, coupons and mobile app.\\r\",\"meta_keywords\":\"Ticket Booking Movies, Movie Tickets, Big Cinema, Ags, Inox",
+    "has_spider": true
+  },
+  {
+    "url": "https://in.bookmyshow.com/api/v1/mobile/secondary/init",
+    "status": 200,
+    "body_preview": "{\"data\":{\"audience\":null,\"analytics\":{\"version\":0,\"url\":null,\"json\":\"{\\\"version\\\":60,\\\"data\\\":{\\\"account_and_settings_option_clicked\\\":{\\\"GA\\\":{\\\"set\\\":true},\\\"NX\\\":{\\\"set\\\":true}},\\\"account_and_settings_option_toggled\\\":{\\\"GA\\\":{\\\"set\\\":true},\\\"NX\\\":{\\\"set\\\":true}},\\\"account_and_settings_viewed\\\":{",
+    "has_spider": false
+  },
+  {
+    "url": "https://in.bookmyshow.com/api/explore/v1/discover/regions",
+    "status": 200,
+    "body_preview": "{\"BookMyShow\":{\"TopCities\":[{\"Alias\":[\"mumbai: western\",\"mumbai: south & central\",\"ulhasnagar\",\"navi mumbai\",\"thane\",\"kalyan\",\"bombay\",\"mumbai\"],\"AllowSales\":\"Y\",\"isOlaEnabled\":\"N\",\"Lat\":\"19.076\",\"Long\":\"72.8777\",\"RegionCallCenterNo\":\"02239895050\",\"RegionCode\":\"MUMBAI\",\"RegionName\":\"Mumbai\",\"StateCo",
+    "has_spider": false
+  }
+]

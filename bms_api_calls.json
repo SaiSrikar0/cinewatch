@@ -1,0 +1,407 @@
+[
+  {
+    "method": "GET",
+    "url": "https://web-assets-in.bmscdn.com/chunks/js/runtime.612af268.js",
+    "resource_type": "script"
+  },
+  {
+    "method": "GET",
+    "url": "https://web-assets-in.bmscdn.com/chunks/js/vendor-primary.7ef97d4e.js",
+    "resource_type": "script"
+  },
+  {
+    "method": "GET",
+    "url": "https://web-assets-in.bmscdn.com/chunks/js/vendor-secondary.32a2bd26.js",
+    "resource_type": "script"
+  },
+  {
+    "method": "GET",
+    "url": "https://web-assets-in.bmscdn.com/chunks/js/app.25e2a7d1.js",
+    "resource_type": "script"
+  },
+  {
+    "method": "GET",
+    "url": "https://web-assets-in.bmscdn.com/chunks/js/common-code.9c11d25b.js",
+    "resource_type": "script"
+  },
+  {
+    "method": "GET",
+    "url": "https://web-assets-in.bmscdn.com/chunks/js/app-explore-Container.f0b7f2a5.js",
+    "resource_type": "script"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICAzLjNLKyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@pt-v1.png,t-false,lfo-top_right,lx-N5,ly-0,w-160,l-end/et00403805-cxrwswcesf-portrait.jpg",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny42LzEwICAzNi45SysgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@pt-v1.png,t-false,lfo-top_right,lx-N5,ly-0,w-160,l-end/et00369379-faqwzaebqc-portrait.jpg",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC44LzEwICA1MTArIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00487783-qqxsrgnxvv-portrait.jpg",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICAzOUsrIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00491460-unceglaqcq-portrait.jpg",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC,e-usm-2-2-0.5-0.008:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MjE4SysgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00452034-qrgdyxqlhb-portrait.jpg",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/webin/common/icons/hut.svg",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common/placeholder.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "POST",
+    "url": "https://sentry.bookmyshow.com/api/2/envelope/?sentry_version=7&sentry_key=4d17a59c2597410e714ab31d421148d9&sentry_client=sentry.javascript.react%2F9.47.1",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "POST",
+    "url": "https://api2.branch.io/v1/open",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "GET",
+    "url": "https://web-assets-in.bmscdn.com/chunks/js/player.7c421fca.js",
+    "resource_type": "script"
+  },
+  {
+    "method": "GET",
+    "url": "https://in.bookmyshow.com/api/v1/mobile/secondary/init",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "GET",
+    "url": "https://in.bookmyshow.com/api/promotion-serving/v1/init",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/webin/common/icons/logo.svg",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://in.bookmyshow.com/api/explore/v1/discover/regions",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://api2.branch.io/v1/pageview",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://in.bookmyshow.com/api/promotion-serving/v1/fetch",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "GET",
+    "url": "https://www.youtube.com/s/player/4918c89a/www-widgetapi.vflset/www-widgetapi.js",
+    "resource_type": "script"
+  },
+  {
+    "method": "POST",
+    "url": "https://sentry.bookmyshow.com/api/2/envelope/?sentry_version=7&sentry_key=4d17a59c2597410e714ab31d421148d9&sentry_client=sentry.javascript.react%2F9.47.1",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "POST",
+    "url": "https://sentry.bookmyshow.com/api/2/envelope/?sentry_version=7&sentry_key=4d17a59c2597410e714ab31d421148d9&sentry_client=sentry.javascript.react%2F9.47.1",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "POST",
+    "url": "https://in.bookmyshow.com/api/promotion-serving/v1/fetch",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/mumbai.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/ncr.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/bang.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/hyd.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/chd.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/ahd.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/pune.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/chen.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/kolk.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/common-modules/regions/koch.png",
+    "resource_type": "image"
+  },
+  {
+    "method": "POST",
+    "url": "https://ampcid.google.com/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://ampcid.google.co.in/v1/publisher:getClientId?key=AIzaSyA65lEHUEizIsNtlbNo-l2K18dT680nsaM",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://ad.doubleclick.net/activity;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=864739500193;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_lHd3wuGSaGQijX3xYhbaM3SC6Od5XSjvdw;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://4736850.fls.doubleclick.net/activityi;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=864739500193;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_lHd3wuGSaGQijX3xYhbaM3SC6Od5XSjvdw;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "document"
+  },
+  {
+    "method": "POST",
+    "url": "https://ad.doubleclick.net/activity;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=2705861962392;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_X90TJAXAeD9Do8uw0Y2x5XzEd4Bu-LBzRg;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://4736850.fls.doubleclick.net/activityi;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=2705861962392;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_X90TJAXAeD9Do8uw0Y2x5XzEd4Bu-LBzRg;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "document"
+  },
+  {
+    "method": "GET",
+    "url": "https://ad.doubleclick.net/activity;dc_pre=CMDlv4zot5UDFQ7ZOAYdMXwtrw;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=864739500193;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_lHd3wuGSaGQijX3xYhbaM3SC6Od5XSjvdw;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://ad.doubleclick.net/activity;dc_pre=CPWmwIzot5UDFcqdYwYdeswxtQ;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=2705861962392;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_X90TJAXAeD9Do8uw0Y2x5XzEd4Bu-LBzRg;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://4736850.fls.doubleclick.net/activityi;dc_pre=COfYxIzot5UDFdtYnQkdkc4lOg;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=864739500193;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_lHd3wuGSaGQijX3xYhbaM3SC6Od5XSjvdw;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "document"
+  },
+  {
+    "method": "GET",
+    "url": "https://4736850.fls.doubleclick.net/activityi;dc_pre=CLDmxIzot5UDFc5WnQkdndguxg;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=2705861962392;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_X90TJAXAeD9Do8uw0Y2x5XzEd4Bu-LBzRg;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "document"
+  },
+  {
+    "method": "GET",
+    "url": "https://adservice.google.com/ddm/fls/z/dc_pre=COfYxIzot5UDFdtYnQkdkc4lOg;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=864739500193;npa=0;auiddc=*;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_lHd3wuGSaGQijX3xYhbaM3SC6Od5XSjvdw;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://adservice.google.com/ddm/fls/z/dc_pre=CLDmxIzot5UDFc5WnQkdndguxg;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=2705861962392;npa=0;auiddc=*;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_X90TJAXAeD9Do8uw0Y2x5XzEd4Bu-LBzRg;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://www.google.com/gmp/conversion/_dc_unique_id=1883443377913689596;_dc_ptd=ChAI8Lud0gYQwaXZgqqb6e4qEh8ANSWHzYN-pbwbP3Ub1Jb1zJUQjfTMYQ2bFp8vl1QW;_dc_time=1783126566;cid=CAQS4QEAEQoqgZwwgpd7Y6tmZ0xTzDhqjwGA_PHWrkYuLMLCOSFWl6_4b3HUQOJBP9D-E6JT65l-wWI7cIYOS3FkMAWqa5dwgIFAQQyuqGc9Ru4sZf3AFBWeXrmN2l8EXcfU2oYmsbDWrQLAGoAQSoc_K0WeX0HnnzwLMIDBOdZjwleaOCmmu3V5A2oa3h8bxHRSFcfFlgdyO2c9d26wp1YMJ-r1TPBZR0l_Muicdu3N7ZtUZwGn6C8gFYBeQownttrX6jvnTLNyxZgwxqqbcP0Z-ykJcIp8erAe31e4mmNQ7mJeMUY;eps=AHas8cCjjx2XpgrrxE0-WLvOKF-8Xu1mWN78R9PnttijpoogW0_e7FaWv4E5nk-wh9hVBmTy0EaQySR65xdu61DTDbvQaU95eO9Hey2KaPA27bG5SQ;dc_pre=CMDlv4zot5UDFQ7ZOAYdMXwtrw;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=864739500193;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_lHd3wuGSaGQijX3xYhbaM3SC6Od5XSjvdw;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://www.google.com/gmp/conversion/_dc_unique_id=9259458748024113988;_dc_ptd=ChAI8Lud0gYQwaXZgqqb6e4qEh8ANSWHzZHKnHEdU-gHEXMvvG8oo7bVL8i5FifftBtx;_dc_time=1783126566;cid=CAQS4QEAEQoqgdsn2awcpxuvj6dZ9lze4kLjRbwYQCuze1mTOwvVpM2TOf_I6uXiQUaSzy5oiHW28a6J4yaRPJTofeAHaRT4JCBh5JpR3aoeob5KcFNCpFH5wlJhAwqIKy5s9OG727n9i349U1yGJXVFrrBFN7YFEEXjHdxwi6P9yoBYSv4rRzrPMmBmdyHkX6oPOGGZZrHYoDTwD94MLZKkT8gXwYsEkVjxenqE9XMM_ByG4U9gr1BkD9PxHfnR7lDb_Qrpr-mYFpfRE0xKLB3VfaxCXxHnBCI5uEBLeFY8xOSn5m8;eps=AHas8cAThan_haC6YIkYjHQ9Xy0b0wzr5uiyN8iBVxoU1QBYFOUFTDhAlR0twJRfGhV-AB4nZtahXlF8_sJFAxjvHVmUDqQVQSYknXKsFtDg80eiYQ;dc_pre=CPWmwIzot5UDFcqdYwYdeswxtQ;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=2705861962392;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126542_X90TJAXAeD9Do8uw0Y2x5XzEd4Bu-LBzRg;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-84T5GTD0PC&gtm=45je6710h2v869142316z876179510za20gzb76179510zd76179510&_p=1783126540017&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&are=1&cid=448229580.1783126542&frm=0&pscdl=noapi&rcb=15&sr=1280x720&uaa=x64&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=english&gaf=2&_s=4&tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895&sid=1783126541&sct=1&seg=0&dl=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome&dt=Movie%20Tickets%2C%20Plays%2C%20Sports%2C%20Events%20%26%20Cinemas%20nearby%20-%20BookMyShow&_tu=QA&en=card_viewed&ep.screen_name=home_discover&ep.member_id=&ep.user_mode=guest&ep.region_code=MUMBAI&ep.bms_id=1.3103044913.1783126563794&ep.app_code=WEB&ep.product=movies&ep.event_code=ET00487783&ep.genre=adventure%7Canimation%7Ccomedy%7Cfamily&ep.title=Minions%20%26%20Monsters&ep.widget_title=Recommended%20Movies&ep.is_tvod=no&ep.event_type=impression&epn.display_position=3&ep.event_group=EG00485149&ep.experiment=new_flow&epn.in_widget_position=3&ep.tags=location_manual&ep.widget_id=TOP_MOVIES_WEB&_et=13&tfd=3420",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://analytics.google.com/g/collect?v=2&tid=G-84T5GTD0PC&gtm=45je6710h2v869142316z876179510za20gzb76179510zd76179510&_p=1783126540017&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAGQC&are=1&cid=448229580.1783126542&frm=0&pscdl=noapi&rcb=15&sr=1280x720&uaa=x64&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=hindi&gaf=2&_s=5&tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895&sid=1783126541&sct=1&seg=0&dl=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome&dt=Movie%20Tickets%2C%20Plays%2C%20Sports%2C%20Events%20%26%20Cinemas%20nearby%20-%20BookMyShow&_tu=QA&en=card_viewed&ep.screen_name=home_discover&ep.member_id=&ep.user_mode=guest&ep.region_code=MUMBAI&ep.bms_id=1.3103044913.1783126563794&ep.app_code=WEB&ep.product=movies&ep.event_code=ET00491460&ep.genre=drama%7Cperiod%7Cromantic&ep.title=Main%20Vaapas%20Aaunga&ep.widget_title=Recommended%20Movies&ep.is_tvod=no&ep.event_type=impression&epn.display_position=3&ep.event_group=EG00488772&ep.experiment=new_flow&epn.in_widget_position=4&ep.tags=location_manual&ep.widget_id=TOP_MOVIES_WEB&_et=12&tfd=3677",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "POST",
+    "url": "https://ad.doubleclick.net/activity;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=1513605821751;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126543_L33UnV_p0yzL54XGHBDqV_BTIjWIHtLtsA;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://4736850.fls.doubleclick.net/activityi;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=1513605821751;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126543_L33UnV_p0yzL54XGHBDqV_BTIjWIHtLtsA;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "document"
+  },
+  {
+    "method": "GET",
+    "url": "https://ad.doubleclick.net/activity;dc_pre=CKvRko3ot5UDFeChYwYdegU2cw;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=1513605821751;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126543_L33UnV_p0yzL54XGHBDqV_BTIjWIHtLtsA;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://4736850.fls.doubleclick.net/activityi;dc_pre=COmHk43ot5UDFVtvnQkd8WQ1Nw;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=1513605821751;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126543_L33UnV_p0yzL54XGHBDqV_BTIjWIHtLtsA;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "document"
+  },
+  {
+    "method": "GET",
+    "url": "https://adservice.google.com/ddm/fls/z/dc_pre=COmHk43ot5UDFVtvnQkd8WQ1Nw;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=1513605821751;npa=0;auiddc=*;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126543_L33UnV_p0yzL54XGHBDqV_BTIjWIHtLtsA;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://www.google.com/gmp/conversion/_dc_unique_id=5601265495143876511;_dc_ptd=ChAI8Lud0gYQwaXZgqqb6e4qEh8ANSWHzauFcb9ih1ANvgrt_ttsMH135MQtdn2jTpoa;_dc_time=1783126567;cid=CAQS4QEAEQoqgdFCnI_-zc7iPuZpE56HvGkC7so8jaogbT2SlkdUpffKePKw8KX37EpNZsA8xU6LtfmJXM-IrXIKVEAtCs3hG8jEiytUgyyR6wsCD7R251bPLKVCUWy_KdXaJDTRdXKJ_5mmLY07RsgkHJ94XLnhNYy2Wt5EQt1C3r1XJONcXdlxTUGlIrKEickuSVmQiChZiQ3yj497WJyAEAZQE2oHnvs-DfkOfjcX45nK1Skdczyw463jlE_e1mG-bV2WDjyJcCZ8HwUIMlvn6LiYBjGfHEK9YKHshyp6o7zi2lo;eps=AHas8cDOHOP927hlriiC3FRPSI0Jy5dltmVDWGbiqiN36xjg2HhBPi5MEblwn7H_C1LKU4uKuaz3_lip4dZ73Lr5d_uhU6owMhYJ7AtuEBs9LIM3Kg;dc_pre=CKvRko3ot5UDFeChYwYdegU2cw;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=1513605821751;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126543_L33UnV_p0yzL54XGHBDqV_BTIjWIHtLtsA;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://ad.doubleclick.net/activity;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=723115689932;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126544_F0BoIStin7PitIFLdd-dRgsUv5o1lptdKg;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://4736850.fls.doubleclick.net/activityi;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=723115689932;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126544_F0BoIStin7PitIFLdd-dRgsUv5o1lptdKg;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "document"
+  },
+  {
+    "method": "GET",
+    "url": "https://ad.doubleclick.net/activity;dc_pre=CKzVuI3ot5UDFRp1KgkdqXc0TA;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=723115689932;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126544_F0BoIStin7PitIFLdd-dRgsUv5o1lptdKg;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://4736850.fls.doubleclick.net/activityi;dc_pre=CLeEuY3ot5UDFQRfnQkdS-wQcA;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=723115689932;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126544_F0BoIStin7PitIFLdd-dRgsUv5o1lptdKg;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "document"
+  },
+  {
+    "method": "GET",
+    "url": "https://adservice.google.com/ddm/fls/z/dc_pre=CLeEuY3ot5UDFQRfnQkdS-wQcA;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=723115689932;npa=0;auiddc=*;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126544_F0BoIStin7PitIFLdd-dRgsUv5o1lptdKg;_dc_test=1;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome",
+    "resource_type": "image"
+  },
+  {
+    "method": "GET",
+    "url": "https://www.google.com/gmp/conversion/_dc_unique_id=8536501731898536892;_dc_ptd=ChAI8Lud0gYQwaXZgqqb6e4qEh8ANSWHzcN1XWUPI2_Oi9pXYIbgoL8_2VoWdPljvYUW;_dc_time=1783126568;cid=CAQS4QEAEQoqgdPPEFm99lyLRGlEBqETneBOtVNhwEEybcq3EGYUy_b221XZJs_FwamTnY2o74ObNDoskcwAOILjIY0NmZVFSLv-YUD91-RpvyoUWYBUX2VmkvU4RUK9Gh-ispYvUTX7NscovbRYhlM-gc1OLOvc9Q2if9qwIt0ECTzLr4zwyUgNA_yJ2MFdXVrOJfVnb6DfQqN1R5tQNO1pbEYWug0h6wUOiAAcDZjcccD5UlAd1okmSI49yd6GbPXGhEiyyEdcbIeOgG3kWqu6Euu2NYznYwq03g5_qZsKQw1F84c;eps=AHas8cDdxF3EsqIHmRU4JqleAs0_ABsd6W-32jDrtDoQf9c49QnxtbSxBROXbpEKzZT7Ckv1nwqe1QRmNezjyVGKtHmIo_MESuqJu7FgsuGmlZXtSQ;dc_pre=CKzVuI3ot5UDFRp1KgkdqXc0TA;src=4736850;type=birth0;cat=bms-b0;rcb=12;ord=723115689932;npa=0;auiddc=554616808.1783126541;uaa=x64;uab=64;uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0;uamb=0;uam=;uap=Windows;uapv=10.0;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe6710h2v9190396527z876179510za20gzb76179510zd76179510xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=3;tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895;epver=2;dc_random=1783126544_F0BoIStin7PitIFLdd-dRgsUv5o1lptdKg;~oref=https%3A%2F%2Fin.bookmyshow.com%2Fexplore%2Fhome?",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "POST",
+    "url": "https://clickstream-in.bookmyshow.com/v1/eventstore/publish",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "GET",
+    "url": "https://in.bookmyshow.com/api/seo/v1/footer?url=%2Fexplore%2Fhome%2Fhyderabad",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "GET",
+    "url": "https://in.bookmyshow.com/api/explore/v1/discover/home/hyderabad?region=HYD&embedded=true&lat=17.385044&lon=78.486671",
+    "resource_type": "xhr"
+  },
+  {
+    "method": "POST",
+    "url": "https://sentry.bookmyshow.com/api/2/envelope/?sentry_version=7&sentry_key=4d17a59c2597410e714ab31d421148d9&sentry_client=sentry.javascript.react%2F9.47.1",
+    "resource_type": "fetch"
+  },
+  {
+    "method": "GET",
+    "url": "https://assets-in.bmscdn.com/m6/images/error-states/api-failure.png",
+    "resource_type": "image"
+  }
+]

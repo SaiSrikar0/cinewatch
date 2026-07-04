@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  cinewatch:
+    build: .
+    container_name: cinewatch
+    restart: unless-stopped          # auto-restart on crash; stop only on explicit docker stop
+
+    environment:
+      # ── Movie ──────────────────────────────────────────────────────────────
+      - MOVIE_NAME=Spider-Man: Brand New Day
+      - CITY=Hyderabad
+
+      # ── Polling ────────────────────────────────────────────────────────────
+      - CHECK_INTERVAL_SECONDS=300   # 5 minutes
+
+      # ── Playwright ─────────────────────────────────────────────────────────
+      - HEADLESS=true
+
+      # ── Telegram ───────────────────────────────────────────────────────────
+      # REPLACE these values with your real token and chat ID
+      - TELEGRAM_BOT_TOKEN=YOUR_BOT_TOKEN_HERE
+      - TELEGRAM_CHAT_ID=YOUR_CHAT_ID_HERE
+
+      # ── Storage ────────────────────────────────────────────────────────────
+      - SNAPSHOT_FILE=/app/data/snapshot.json
+
+    volumes:
+      - cinewatch_data:/app/data     # persistent snapshot + logs
+
+    # Shared memory for Chromium (prevents crashes in containers)
+    shm_size: "2gb"
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  cinewatch_data:
