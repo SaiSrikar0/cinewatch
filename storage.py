@@ -56,9 +56,13 @@ def load_snapshot() -> dict[str, Any]:
 def save_snapshot(snapshot: dict[str, Any]) -> None:
     """Persist the current snapshot to disk with a timestamp."""
     snapshot["last_updated"] = datetime.now().isoformat(timespec="seconds")
+    path = config.SNAPSHOT_FILE
+    dir_name = os.path.dirname(path)
+    if dir_name:
+        os.makedirs(dir_name, exist_ok=True)
     try:
-        with open(config.SNAPSHOT_FILE, "w", encoding="utf-8") as f:
+        with open(path, "w", encoding="utf-8") as f:
             json.dump(snapshot, f, indent=2, ensure_ascii=False)
-        logger.info("Snapshot saved to %s", config.SNAPSHOT_FILE)
+        logger.info("Snapshot saved to %s", path)
     except OSError as exc:
         logger.error("Failed to save snapshot: %s", exc)

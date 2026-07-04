@@ -36,6 +36,9 @@ def _load_notified() -> set[str]:
 
 
 def _save_notified(notified: set[str]) -> None:
+    dir_name = os.path.dirname(NOTIFIED_FILE)
+    if dir_name:
+        os.makedirs(dir_name, exist_ok=True)
     try:
         with open(NOTIFIED_FILE, "w", encoding="utf-8") as f:
             json.dump(sorted(notified), f, indent=2)

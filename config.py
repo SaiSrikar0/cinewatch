@@ -61,6 +61,9 @@ TELEGRAM_CHAT_ID: str = os.getenv("TELEGRAM_CHAT_ID", "")
 # Storage
 # ---------------------------------------------------------------------------
 SNAPSHOT_FILE: str = os.getenv("SNAPSHOT_FILE", "snapshot.json")
+# On Windows, redirect Docker-specific path to a local directory to avoid write errors or creating C:\app\data
+if os.name == "nt" and (SNAPSHOT_FILE.startswith("/app/") or SNAPSHOT_FILE.startswith("\\app\\")):
+    SNAPSHOT_FILE = SNAPSHOT_FILE.replace("/app/data/", "data/").replace("\\app\\data\\", "data/")
 
 # ---------------------------------------------------------------------------
 # Direct Showtime URL
