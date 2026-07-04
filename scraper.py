@@ -79,11 +79,25 @@ def scrape_movie(movie_name: str, city: str) -> dict[str, Any]:
     pw_ctx = Stealth().use_sync(sync_playwright()) if config.STEALTH else sync_playwright()
 
     with pw_ctx as pw:
-        logger.info("Launching browser (headless=%s, stealth=%s)", config.HEADLESS, config.STEALTH)
-        browser = pw.chromium.launch(
-            headless=config.HEADLESS,
-            args=["--no-sandbox", "--disable-dev-shm-usage"],
+        launch_args = {
+            "headless": config.HEADLESS,
+            "args": ["--no-sandbox", "--disable-dev-shm-usage"],
+        }
+        if config.PROXY_SERVER:
+            proxy_config = {"server": config.PROXY_SERVER}
+            if config.PROXY_USERNAME:
+                proxy_config["username"] = config.PROXY_USERNAME
+            if config.PROXY_PASSWORD:
+                proxy_config["password"] = config.PROXY_PASSWORD
+            launch_args["proxy"] = proxy_config
+
+        logger.info(
+            "Launching browser (headless=%s, stealth=%s, proxy=%s)",
+            config.HEADLESS,
+            config.STEALTH,
+            bool(config.PROXY_SERVER),
         )
+        browser = pw.chromium.launch(**launch_args)
         context = browser.new_context(
             user_agent=(
                 "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "

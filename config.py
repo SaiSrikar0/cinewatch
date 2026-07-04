@@ -80,3 +80,11 @@ if not BUY_TICKETS_URL:
 # ---------------------------------------------------------------------------
 MAX_SCRAPE_RETRIES: int = 3
 RETRY_DELAY_SECONDS: int = 30
+
+# ---------------------------------------------------------------------------
+# Proxy Settings (Optional, used to bypass Cloudflare on Render/Cloud hosts)
+# ---------------------------------------------------------------------------
+PROXY_SERVER: str = os.getenv("PROXY_SERVER", "")
+PROXY_USERNAME: str = os.getenv("PROXY_USERNAME", "")
+PROXY_PASSWORD: str = os.getenv("PROXY_PASSWORD", "")
+

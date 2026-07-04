@@ -21,3 +21,9 @@ services:
         sync: false
       - key: SNAPSHOT_FILE
         value: "/app/data/snapshot.json"
+      - key: PROXY_SERVER
+        sync: false
+      - key: PROXY_USERNAME
+        sync: false
+      - key: PROXY_PASSWORD
+        sync: false
